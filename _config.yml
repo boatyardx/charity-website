@@ -31,7 +31,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin    : "dark"
+minimal_mistakes_skin    : "neon"
 logo                     : /assets/images/byx_logo_mic.png
 
 plugins:
