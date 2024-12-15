@@ -55,8 +55,8 @@
     const distance = targetDate - now;
 
     if (distance <= 0) {
-      document.getElementById('countdown').textContent = "00:00:00:00";
-      document.getElementById('message').textContent = "The event has started!";
+      document.getElementById('countdown').textContent = "00 zile, 00 ore, 00 minute, 00 secunde";
+      document.getElementById('message').textContent = "Evenimentul a început!";
       clearInterval(timer);
       return;
     }
@@ -67,12 +67,12 @@
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Format the output as DD:HH:MM:SS
+    // Format the output as "xx zile, yy ore, zz minute, tt secunde"
     const countdownString = 
-      String(days).padStart(2, '0') + ":" +
-      String(hours).padStart(2, '0') + ":" +
-      String(minutes).padStart(2, '0') + ":" +
-      String(seconds).padStart(2, '0');
+      String(days).padStart(2, '0') + " zile, " +
+      String(hours).padStart(2, '0') + " ore, " +
+      String(minutes).padStart(2, '0') + " minute, " +
+      String(seconds).padStart(2, '0') + " secunde";
 
     document.getElementById('countdown').textContent = countdownString;
   }
