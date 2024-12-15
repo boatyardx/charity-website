@@ -32,9 +32,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin    : "neon"
-logo                     : /assets/images/byx_logo_mic.png
-header:
-  teaser: /assets/images/poor_sorin.png
+# logo                     : /assets/images/byx_logo_mic.png
 name: "BYX Fund Raising"
 url: "https://charity.boatyardx.com"
 

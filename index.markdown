@@ -1,6 +1,9 @@
 ---
 layout: single
 title: "Raise Funds, Break Bosses"
+header:
+  overlay_image: /assets/images/byx_logo_mic.png
+  overlay_filter: 0.5  # Optional: adds a dark overlay for better text contrast
 ---
 
 <div id="countdown" style="font-size:2em; font-weight:bold; text-align:center; margin-top:50px;"></div>
