@@ -1,8 +1,9 @@
 ---
 layout: single
-title: "Raise Funds, Break Bosses"
+title: "Falimentează firma pentru o cauză bună"
 header:
-  feature_image: /assets/images/poor_sorin.jpg
+  image: /assets/images/poor_sorin.jpg
+  teaser: /assets/images/poor_sorin.jpg
   # overlay_filter: 0.5  # Optional: adds a dark overlay for better text contrast
 ---
 
