@@ -43,7 +43,7 @@ Cine dorește să ajute, poate trimite donațiile până pe 18 decembrie la:
 
     // Display the result
     document.getElementById("countdown").innerHTML = 
-      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      days + "zile " + hours + "ore " + minutes + "minute " + seconds + "secunde ";
 
     // If the countdown is over
     if (distance < 0) {
