@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Countdown to December 18, 2024"
+title: "Raise Funds, Break Bosses"
 ---
 
 <div id="countdown" style="font-size:2em; font-weight:bold; text-align:center; margin-top:50px;"></div>
