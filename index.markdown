@@ -5,6 +5,8 @@ header:
   image: /assets/images/poor_sorin.jpg
   teaser: /assets/images/poor_sorin.jpg
   # overlay_filter: 0.5  # Optional: adds a dark overlay for better text contrast
+footer:
+  content: "© 2024 Boatyardx Team Christmas Charity."
 ---
 
 Se apropie Crăciunul — perioada în care, teoretic, nimeni nu cheltuie bani, nu-i așa? Ei bine, m-am gândit să profit un pic de generozitatea voastră, și nu doar atât. Vrem să strângem niște bănuți pentru a sprijini [Casa de Copii Căsuța Bucuriei](https://www.casutabucuriei.eu/).
@@ -43,12 +45,12 @@ Cine dorește să ajute, poate trimite donațiile până pe 18 decembrie la:
 
     // Display the result
     document.getElementById("countdown").innerHTML = 
-      days + "zile " + hours + "ore " + minutes + "minute " + seconds + "secunde ";
+      days + " zile " + hours + " ore " + minutes + " min " + seconds + " sec ";
 
     // If the countdown is over
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("countdown").innerHTML = "IT'S TIME!";
+      document.getElementById("countdown").innerHTML = "DING DING DING!";
     }
   }, 1000);
 })();
