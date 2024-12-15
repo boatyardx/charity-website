@@ -36,8 +36,11 @@ logo                     : /assets/images/byx_logo_mic.png
 name: "BYX Fund Raising"
 url: "https://charity.boatyardx.com"
 
+atom_feed:
+  hide: true
+
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -81,6 +84,7 @@ defaults:
 include:
   # - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
