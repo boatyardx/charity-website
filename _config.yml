@@ -39,7 +39,7 @@ url: "https://charity.boatyardx.com"
 atom_feed:
   hide: true
 
-plugins:
+# plugins:
   # - jekyll-feed
 
 # Exclude from processing.
