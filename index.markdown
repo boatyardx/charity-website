@@ -22,10 +22,11 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
 **Nume:** Razvan Balsan  
 **Detalii plată:** BYX Christmas
 
+<div id="fetched-value" style="font-size:1.5em; font-weight:bold; text-align:center; margin-top:20px;"></div>
+
 ## Au mai ramas:
 {: .text-center}
 
-<div id="fetched-value" style="font-size:1.5em; font-weight:bold; text-align:center; margin-top:20px;"></div>
 <div id="countdown" style="font-size:2em; font-weight:bold; text-align:center; margin-top:50px;"></div>
 
 
@@ -34,13 +35,19 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
   var fetchedValue = "";
 
   // Fetch the CSV
-  fetch('https://docs.google.com/spreadsheets/d/1Paq5nh6lSCZO0No33WxFRFE9AqQ7OxKxgABWBCuHXyI/pub?output=csv')
+  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vROjsHIF-GmltYCqh3cwRwqpMIhvXZGOT_aXMEzmCZFmcCwspGeTs7AQfkf21nYp0fDZXJS7GXc__J1/pub?gid=0&single=true&output=csv')
     .then(response => response.text())
     .then(data => {
       const rows = data.split('\n').map(row => row.split(','));
       fetchedValue = rows[0][0]; 
+      
       // Show the fetched value in the fetched-value div
-      document.getElementById('fetched-value').textContent = `Pana acum Boatyardx e cu ${fetchedValue} lei mai saraca`;
+      const fetchedValueDiv = document.getElementById('fetched-value');
+      fetchedValueDiv.textContent = `Până acum, Boatyardx e cu ${fetchedValue} lei mai săracă`;
+
+      // Style the fetched value in red
+      fetchedValueDiv.style.color = "red";
+      fetchedValueDiv.style.fontWeight = "bold";
     })
     .catch(error => console.error('Error:', error));
 
@@ -63,10 +70,22 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").textContent = 
+    // Update the countdown text
+    const countdownDiv = document.getElementById("countdown");
+    countdownDiv.textContent = 
       days + " zile " + hours + " ore " + minutes + " min " + seconds + " sec ";
+
+    // Change countdown colour to red if 1 day or less is remaining
+    if (days < 1) {
+      countdownDiv.style.color = "red";
+      countdownDiv.style.fontWeight = "bold";
+    } else {
+      countdownDiv.style.color = ""; // Reset to default
+      countdownDiv.style.fontWeight = "";
+    }
   }, 1000);
 })();
 </script>
+
 
 
