@@ -42,13 +42,13 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
         const rows = data.split('\n').map(row => row.split(','));
         const fetchedValue = rows[0][0]; 
         
-        // Update the fetched value in the DOM
+        // Update the fetched value in the DOM with multi-line text
         const fetchedValueDiv = document.getElementById('fetched-value');
-        fetchedValueDiv.textContent = `Până acum, Boatyardx e cu ${fetchedValue} lei mai săracă`;
-
-        // Style the fetched value in red
-        fetchedValueDiv.style.color = "red";
-        fetchedValueDiv.style.fontWeight = "bold";
+        fetchedValueDiv.innerHTML = `
+          <div style="text-align: center;">Până acum, Boatyardx e cu</div>
+          <div style="text-align: center; font-size: 1.5em; font-weight: bold; color: red;">${fetchedValue} lei</div>
+          <div style="text-align: center;">mai săracă</div>
+        `;
       })
       .catch(error => console.error('Error:', error));
   }
