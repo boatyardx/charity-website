@@ -137,11 +137,23 @@
 
 
 
-<div class="page__hero"
-  style=" background-image: url('');"
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/poor_sorin.jpg');"
 >
   
-    <img src="/assets/images/poor_sorin.jpg" alt="Falimentează firma pentru o cauză bună" class="page__hero-image">
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Falimentează firma pentru o cauză bună
+
+        
+      </h1>
+      
+      
+
+
+      
+    </div>
   
   
 </div>
@@ -164,20 +176,37 @@
 
     <div class="page__inner-wrap">
       
-        <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/" itemprop="url">Falimentează firma pentru o cauză bună
-</a>
-          </h1>
-          
-
-
-        </header>
-      
 
       <section class="page__content" itemprop="text">
         
-        <p>Se apropie Crăciunul — perioada în care, teoretic, nimeni nu cheltuie bani, nu-i așa? Ei bine, m-am gândit să profit un pic de generozitatea voastră, și nu doar atât. Vrem să strângem niște bănuți pentru a sprijini <a href="https://www.casutabucuriei.eu/">Casa de Copii Căsuța Bucuriei</a>.</p>
+        
+<figure class="third ">
+  
+    
+      <a href="/assets/images/poor_sorin.jpg">
+          <img src="/assets/images/poor_sorin.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/sorin-face-swap.png">
+          <img src="/assets/images/sorin-face-swap.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/sorin-face-swap2.png">
+          <img src="/assets/images/sorin-face-swap2.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>
+</figcaption>
+  
+</figure>
+
+<p>Se apropie Crăciunul — perioada în care, teoretic, nimeni nu cheltuie bani, nu-i așa? Ei bine, m-am gândit să profit un pic de generozitatea voastră, și nu doar atât. Vrem să strângem niște bănuți pentru a sprijini <a href="https://www.casutabucuriei.eu/">Casa de Copii Căsuța Bucuriei</a>.</p>
 
 <p>Partea cea mai frumoasă este că l-am prins pe Sorin într-o dispoziție excelentă, iar anul acesta Boatyardx o să dubleze fiecare leu pe care îl donăm noi!</p>
 
@@ -201,23 +230,26 @@
   var countDownDate = new Date("Dec 20, 2024 20:00:00 GMT+0200").getTime();
 
   // Function to fetch and update the fetched value
-  function fetchAndUpdateValue() {
-    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vROjsHIF-GmltYCqh3cwRwqpMIhvXZGOT_aXMEzmCZFmcCwspGeTs7AQfkf21nYp0fDZXJS7GXc__J1/pub?gid=0&single=true&output=csv')
-      .then(response => response.text())
-      .then(data => {
-        const rows = data.split('\n').map(row => row.split(','));
-        const fetchedValue = rows[0][0]; 
-        
-        // Update the fetched value in the DOM with multi-line text
-        const fetchedValueDiv = document.getElementById('fetched-value');
-        fetchedValueDiv.innerHTML = `
-          <div style="text-align: center;">Până acum, Boatyardx e cu</div>
-          <div style="text-align: center; font-size: 1.5em; font-weight: bold; color: red;">${fetchedValue} lei</div>
-          <div style="text-align: center;">mai săracă</div>
-        `;
-      })
-      .catch(error => console.error('Error:', error));
-  }
+function fetchAndUpdateValue() {
+  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vROjsHIF-GmltYCqh3cwRwqpMIhvXZGOT_aXMEzmCZFmcCwspGeTs7AQfkf21nYp0fDZXJS7GXc__J1/pub?gid=0&single=true&output=csv', {
+    cache: "no-cache"
+  })
+    .then(response => response.text())
+    .then(data => {
+      const rows = data.split('\n').map(row => row.split(','));
+      const fetchedValue = rows[0][0]; 
+      
+      // Update the fetched value in the DOM with multi-line text
+      const fetchedValueDiv = document.getElementById('fetched-value');
+      fetchedValueDiv.innerHTML = `
+        <div style="text-align: center;">Până acum, Boatyardx e cu</div>
+        <div style="text-align: center; font-size: 1.5em; font-weight: bold; color: red;">${fetchedValue} lei</div>
+        <div style="text-align: center;">mai săracă</div>
+      `;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
 
   // Function to update the countdown
   function updateCountdown() {
@@ -255,7 +287,7 @@
   updateCountdown();
 
   // Auto-update the fetched value every 5 seconds
-  setInterval(fetchAndUpdateValue, 5000);
+  setInterval(fetchAndUpdateValue, 10000);
 
   // Update the countdown every second
   var x = setInterval(updateCountdown, 1000);

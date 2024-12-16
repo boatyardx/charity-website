@@ -2,12 +2,21 @@
 layout: single
 title: "Falimentează firma pentru o cauză bună"
 header:
-  image: /assets/images/poor_sorin.jpg
+  overlay_image: /assets/images/poor_sorin.jpg
   teaser: /assets/images/poor_sorin.jpg
   # overlay_filter: 0.5  # Optional: adds a dark overlay for better text contrast
+gallery1:
+  - url: /assets/images/poor_sorin.jpg
+    image_path: /assets/images/poor_sorin.jpg
+  - url: /assets/images/sorin-face-swap.png
+    image_path: /assets/images/sorin-face-swap.png
+  - url: /assets/images/sorin-face-swap2.png
+    image_path: /assets/images/sorin-face-swap2.png
 footer:
   content: "© 2024 Boatyardx Team Christmas Charity."
 ---
+
+{% include gallery id="gallery1" caption="" %}
 
 Se apropie Crăciunul — perioada în care, teoretic, nimeni nu cheltuie bani, nu-i așa? Ei bine, m-am gândit să profit un pic de generozitatea voastră, și nu doar atât. Vrem să strângem niște bănuți pentru a sprijini [Casa de Copii Căsuța Bucuriei](https://www.casutabucuriei.eu/).
 
