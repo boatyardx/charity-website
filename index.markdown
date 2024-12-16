@@ -25,34 +25,48 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
 ## Au mai ramas:
 {: .text-center}
 
+<div id="fetched-value" style="font-size:1.5em; font-weight:bold; text-align:center; margin-top:20px;"></div>
 <div id="countdown" style="font-size:2em; font-weight:bold; text-align:center; margin-top:50px;"></div>
+
 
 <script>
 (function() {
-  // Set the date and time of the countdown end in Bucharest time (UTC+2)
+  var fetchedValue = "";
+
+  // Fetch the CSV
+  fetch('https://docs.google.com/spreadsheets/d/1Paq5nh6lSCZO0No33WxFRFE9AqQ7OxKxgABWBCuHXyI/pub?output=csv')
+    .then(response => response.text())
+    .then(data => {
+      const rows = data.split('\n').map(row => row.split(','));
+      fetchedValue = rows[0][0]; 
+      // Show the fetched value in the fetched-value div
+      document.getElementById('fetched-value').textContent = `Pana acum Boatyardx e cu ${fetchedValue} lei mai saraca`;
+    })
+    .catch(error => console.error('Error:', error));
+
+  // Set the countdown end time
   var countDownDate = new Date("Dec 20, 2024 20:00:00 GMT+0200").getTime();
 
-  // Update every 1 second
+  // Update the countdown every second
   var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
 
-    // Time calculations for days/hours/minutes/seconds
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").textContent = "DING DING DING!";
+      return;
+    }
+
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result
-    document.getElementById("countdown").innerHTML = 
+    document.getElementById("countdown").textContent = 
       days + " zile " + hours + " ore " + minutes + " min " + seconds + " sec ";
-
-    // If the countdown is over
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "DING DING DING!";
-    }
   }, 1000);
 })();
 </script>
+
 
