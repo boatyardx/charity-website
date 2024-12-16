@@ -11,7 +11,7 @@ footer:
 
 Se apropie Crăciunul — perioada în care, teoretic, nimeni nu cheltuie bani, nu-i așa? Ei bine, m-am gândit să profit un pic de generozitatea voastră, și nu doar atât. Vrem să strângem niște bănuți pentru a sprijini [Casa de Copii Căsuța Bucuriei](https://www.casutabucuriei.eu/).
 
-Partea cea mai frumoasă este că l-am prins pe Sorin într-o dispoziție excelentă, iar anul acesta Boatyardx promite să dubleze fiecare leu pe care îl donăm noi!
+Partea cea mai frumoasă este că l-am prins pe Sorin într-o dispoziție excelentă, iar anul acesta Boatyardx o să dubleze fiecare leu pe care îl donăm noi!
 
 Ho ho! Orice contribuție, oricât de mică, ajută enorm.
 
@@ -30,7 +30,7 @@ Cine dorește să ajute, poate trimite donațiile până pe 18 decembrie la:
 <script>
 (function() {
   // Set the date and time of the countdown end in Bucharest time (UTC+2)
-  var countDownDate = new Date("Dec 18, 2024 20:00:00 GMT+0200").getTime();
+  var countDownDate = new Date("Dec 20, 2024 20:00:00 GMT+0200").getTime();
 
   // Update every 1 second
   var x = setInterval(function() {
