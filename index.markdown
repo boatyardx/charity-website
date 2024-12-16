@@ -36,8 +36,9 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
 
   // Function to fetch and update the fetched value
 function fetchAndUpdateValue() {
-  const url = `https://docs.google.com/spreadsheets/d/e/2PACX-1vROjsHIF-GmltYCqh3cwRwqpMIhvXZGOT_aXMEzmCZFmcCwspGeTs7AQfkf21nYp0fDZXJS7GXc__J1/pub?gid=0&single=true&output=csv&_=${new Date().getTime()}`;
-  fetch(url)
+  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vROjsHIF-GmltYCqh3cwRwqpMIhvXZGOT_aXMEzmCZFmcCwspGeTs7AQfkf21nYp0fDZXJS7GXc__J1/pub?gid=0&single=true&output=csv', {
+    cache: "no-cache"
+  })
     .then(response => response.text())
     .then(data => {
       const rows = data.split('\n').map(row => row.split(','));
@@ -53,6 +54,7 @@ function fetchAndUpdateValue() {
     })
     .catch(error => console.error('Error:', error));
 }
+
 
   // Function to update the countdown
   function updateCountdown() {
