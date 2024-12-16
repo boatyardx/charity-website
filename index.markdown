@@ -35,23 +35,24 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
   var countDownDate = new Date("Dec 20, 2024 20:00:00 GMT+0200").getTime();
 
   // Function to fetch and update the fetched value
-  function fetchAndUpdateValue() {
-    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vROjsHIF-GmltYCqh3cwRwqpMIhvXZGOT_aXMEzmCZFmcCwspGeTs7AQfkf21nYp0fDZXJS7GXc__J1/pub?gid=0&single=true&output=csv')
-      .then(response => response.text())
-      .then(data => {
-        const rows = data.split('\n').map(row => row.split(','));
-        const fetchedValue = rows[0][0]; 
-        
-        // Update the fetched value in the DOM with multi-line text
-        const fetchedValueDiv = document.getElementById('fetched-value');
-        fetchedValueDiv.innerHTML = `
-          <div style="text-align: center;">Până acum, Boatyardx e cu</div>
-          <div style="text-align: center; font-size: 1.5em; font-weight: bold; color: red;">${fetchedValue} lei</div>
-          <div style="text-align: center;">mai săracă</div>
-        `;
-      })
-      .catch(error => console.error('Error:', error));
-  }
+function fetchAndUpdateValue() {
+  const url = `https://docs.google.com/spreadsheets/d/e/2PACX-1vROjsHIF-GmltYCqh3cwRwqpMIhvXZGOT_aXMEzmCZFmcCwspGeTs7AQfkf21nYp0fDZXJS7GXc__J1/pub?gid=0&single=true&output=csv&_=${new Date().getTime()}`;
+  fetch(url)
+    .then(response => response.text())
+    .then(data => {
+      const rows = data.split('\n').map(row => row.split(','));
+      const fetchedValue = rows[0][0]; 
+      
+      // Update the fetched value in the DOM with multi-line text
+      const fetchedValueDiv = document.getElementById('fetched-value');
+      fetchedValueDiv.innerHTML = `
+        <div style="text-align: center;">Până acum, Boatyardx e cu</div>
+        <div style="text-align: center; font-size: 1.5em; font-weight: bold; color: red;">${fetchedValue} lei</div>
+        <div style="text-align: center;">mai săracă</div>
+      `;
+    })
+    .catch(error => console.error('Error:', error));
+}
 
   // Function to update the countdown
   function updateCountdown() {
