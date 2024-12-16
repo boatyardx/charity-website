@@ -15,7 +15,7 @@ Partea cea mai frumoasă este că l-am prins pe Sorin într-o dispoziție excele
 
 Ho ho! Orice contribuție, oricât de mică, ajută enorm.
 
-Cine dorește să ajute, poate trimite donațiile până pe 18 decembrie la:
+Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
 
 **Revolut:** @razvanbalsan  
 **ING:** RO93INGB0000999905486139  
