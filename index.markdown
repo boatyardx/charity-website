@@ -92,7 +92,7 @@ function fetchAndUpdateValue() {
   updateCountdown();
 
   // Auto-update the fetched value every 5 seconds
-  setInterval(fetchAndUpdateValue, 1000);
+  setInterval(fetchAndUpdateValue, 10000);
 
   // Update the countdown every second
   var x = setInterval(updateCountdown, 1000);
