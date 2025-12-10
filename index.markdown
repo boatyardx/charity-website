@@ -1,17 +1,17 @@
 ---
 layout: single
-title: "Falimentează firma pentru o cauză bună"
+title: "Donații de Crăciun 2025"
 footer:
   content: "© 2025 Boatyardx Team Christmas Charity."
 ---
 
-Se apropie Crăciunul — perioada în care, teoretic, nimeni nu cheltuie bani, nu-i așa? Ei bine, m-am gândit să profit un pic de generozitatea voastră, și nu doar atât. Vrem să strângem niște bănuți pentru a sprijini [Casa de Copii Căsuța Bucuriei](https://www.casutabucuriei.eu/).
+Se apropie Crăciunul, și ne-am gândit că e momentul perfect să facem ceva frumos împreună. Anul acesta vrem să strângem bani pentru [Casa AKSZA](https://www.facebook.com/Aksza2000/?locale=ro_RO) — un loc care face diferența în viețile copiilor care au cel mai mare nevoie de ajutor.
 
-Partea cea mai frumoasă este că l-am prins pe Sorin într-o dispoziție excelentă, iar anul acesta Boatyardx o să dubleze fiecare leu pe care îl donăm noi!
+Știu că fiecare deja avem cheltuieli de sărbători, dar iată partea care chiar merită atenția: Boatyardx va dubla fiecare leu donat! Practic, donația ta devine automată de două ori mai mare.
 
-Ho ho! Orice contribuție, oricât de mică, ajută enorm.
+Orice sumă ajută — nu contează cât. Chiar și 10-20 de lei înseamnă mult când se adună și se dublează.
 
-Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
+Cine dorește să contribuie, poate trimite donații până pe 20 decembrie la:
 
 **Revolut:** @razvanbalsan  
 **ING:** RO93INGB0000999905486139  
