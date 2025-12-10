@@ -43,9 +43,8 @@ function fetchAndUpdateValue() {
       // Update the fetched value in the DOM with multi-line text
       const fetchedValueDiv = document.getElementById('fetched-value');
       fetchedValueDiv.innerHTML = `
-        <div style="text-align: center;">Până acum, Boatyardx e cu</div>
+        <div style="text-align: center;">Până acum, am reușit să strângem</div>
         <div style="text-align: center; font-size: 1.5em; font-weight: bold; color: red;">${fetchedValue} lei</div>
-        <div style="text-align: center;">mai săracă</div>
       `;
     })
     .catch(error => console.error('Error:', error));
