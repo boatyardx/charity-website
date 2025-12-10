@@ -1,22 +1,9 @@
 ---
 layout: single
 title: "Falimentează firma pentru o cauză bună"
-header:
-  overlay_image: /assets/images/poor_sorin.jpg
-  teaser: /assets/images/poor_sorin.jpg
-  # overlay_filter: 0.5  # Optional: adds a dark overlay for better text contrast
-gallery1:
-  - url: /assets/images/poor_sorin.jpg
-    image_path: /assets/images/poor_sorin.jpg
-  - url: /assets/images/sorin-face-swap.png
-    image_path: /assets/images/sorin-face-swap.png
-  - url: /assets/images/sorin-face-swap2.png
-    image_path: /assets/images/sorin-face-swap2.png
 footer:
-  content: "© 2024 Boatyardx Team Christmas Charity."
+  content: "© 2025 Boatyardx Team Christmas Charity."
 ---
-
-{% include gallery id="gallery1" caption="" %}
 
 Se apropie Crăciunul — perioada în care, teoretic, nimeni nu cheltuie bani, nu-i așa? Ei bine, m-am gândit să profit un pic de generozitatea voastră, și nu doar atât. Vrem să strângem niște bănuți pentru a sprijini [Casa de Copii Căsuța Bucuriei](https://www.casutabucuriei.eu/).
 
@@ -41,7 +28,7 @@ Cine dorește să ajute, poate trimite donațiile până pe 20 decembrie la:
 
 <script>
 (function() {
-  var countDownDate = new Date("Dec 20, 2024 20:00:00 GMT+0200").getTime();
+  var countDownDate = new Date("Dec 20, 2025 20:00:00 GMT+0200").getTime();
 
   // Function to fetch and update the fetched value
 function fetchAndUpdateValue() {

@@ -32,7 +32,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # Build settings
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin    : "neon"
-logo                     : /assets/images/byx_logo_mic.png
 name: "BYX Fund Raising"
 url: "https://charity.boatyardx.com"
 
@@ -120,4 +119,4 @@ author:
   name: "Boatyardx Chirstmas Charity"
 
 footer:
-  content: "© 2024 Boatyardx Team Christmas Charity."
+  content: "© 2025 Boatyardx Team Christmas Charity."
