@@ -1,12 +1,11 @@
 ---
 layout: single
 title: "Donații de Crăciun 2025"
-header:
-  overlay_image: /assets/images/byx_christmas3.png
-  overlay_filter: 0.3
 footer:
   content: "© 2025 Boatyardx Team Christmas Charity."
 ---
+
+![Donații de Crăciun pentru Casa AKSZA](/assets/images/byx_christmas3.png){: .align-center}
 
 Se apropie Crăciunul, și ne-am gândit că e momentul perfect să facem ceva frumos împreună. Anul acesta vrem să strângem bani pentru [Casa AKSZA](https://www.facebook.com/Aksza2000/?locale=ro_RO) — vecinii noștri de pe Emil Racoviță nr. 59, un loc care face diferența în viețile copiilor care au cel mai mare nevoie de ajutor.
 
