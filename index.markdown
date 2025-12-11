@@ -1,6 +1,9 @@
 ---
 layout: single
 title: "Donații de Crăciun 2025"
+header:
+  overlay_image: /assets/images/byx_christmas3.png
+  overlay_filter: 0.3
 footer:
   content: "© 2025 Boatyardx Team Christmas Charity."
 ---
