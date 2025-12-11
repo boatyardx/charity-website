@@ -5,13 +5,13 @@ footer:
   content: "© 2025 Boatyardx Team Christmas Charity."
 ---
 
-Se apropie Crăciunul, și ne-am gândit că e momentul perfect să facem ceva frumos împreună. Anul acesta vrem să strângem bani pentru [Casa AKSZA](https://www.facebook.com/Aksza2000/?locale=ro_RO) — un loc care face diferența în viețile copiilor care au cel mai mare nevoie de ajutor.
+Se apropie Crăciunul, și ne-am gândit că e momentul perfect să facem ceva frumos împreună. Anul acesta vrem să strângem bani pentru [Casa AKSZA](https://www.facebook.com/Aksza2000/?locale=ro_RO) — vecinii noștri de pe Emil Racoviță nr. 59, un loc care face diferența în viețile copiilor care au cel mai mare nevoie de ajutor.
 
-Știu că fiecare deja avem cheltuieli de sărbători, dar iată partea care chiar merită atenția: Boatyardx va dubla fiecare leu donat! Practic, donația ta devine automată de două ori mai mare.
+Știu că fiecare deja avem cheltuieli de sărbători, dar chiar și o sumă mică poate însemna enorm pentru acești copii. Când ne strângem cu toții, fiecare contribuție se adună și devine ceva cu adevărat special.
 
-Orice sumă ajută — nu contează cât. Chiar și 10-20 de lei înseamnă mult când se adună și se dublează.
+Orice sumă ajută — nu contează cât.
 
-Cine dorește să contribuie, poate trimite donații până pe 20 decembrie la:
+Cine dorește să contribuie, poate trimite donații până pe 22 decembrie la:
 
 **Revolut:** @razvanbalsan  
 **ING:** RO93INGB0000999905486139  
@@ -28,7 +28,7 @@ Cine dorește să contribuie, poate trimite donații până pe 20 decembrie la:
 
 <script>
 (function() {
-  var countDownDate = new Date("Dec 20, 2025 20:00:00 GMT+0200").getTime();
+  var countDownDate = new Date("Dec 22, 2025 20:00:00 GMT+0200").getTime();
 
   // Function to fetch and update the fetched value
 function fetchAndUpdateValue() {
