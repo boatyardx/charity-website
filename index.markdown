@@ -13,7 +13,7 @@ Se apropie Crăciunul, și ne-am gândit că e momentul perfect să facem ceva f
 
 Orice sumă ajută — nu contează cât.
 
-Cine dorește să contribuie, poate trimite donații până pe 22 decembrie la:
+Cine dorește să contribuie, poate trimite donații până pe 24decembrie la:
 
 **Revolut:** @razvanbalsan  
 **ING:** RO93INGB0000999905486139  
@@ -30,7 +30,7 @@ Cine dorește să contribuie, poate trimite donații până pe 22 decembrie la:
 
 <script>
 (function() {
-  var countDownDate = new Date("Dec 22, 2025 20:00:00 GMT+0200").getTime();
+  var countDownDate = new Date("Dec 24, 2025 20:00:00 GMT+0200").getTime();
 
   // Function to fetch and update the fetched value
 function fetchAndUpdateValue() {
